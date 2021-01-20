@@ -44,6 +44,48 @@ body.platform-win32 {
 
 //div:not(.layout-mode-popout) {
   .sheet-toolbar {
+    .toolbar-RootSidebar {
+      img {
+        zoom: 1 !important;
+        -webkit-mask-image: none !important;
+        -webkit-mask-repeat: none !important;
+        mask-image: none !important;
+        mask-repeat: none !important;
+        object-position: 0 !important;
+        background: none !important;
+
+        // New properties to be set for the images.
+        height: 24px;
+        background-size: auto !important;
+      }
+      .toolbar-activity {
+        img {
+          height: 24px;
+          margin-top: 6px;
+          content: url("mailspring://breeze-light/icons/earthquake.svg");
+          border: 1px solid !important;
+          border-radius: @base-border-radius;
+          border-color: @panel-background!important;      
+          &:hover {
+            border: 1px solid;
+            border-color: @breeze-blue !important;
+          }
+          }
+      }
+
+      // Compose button properties.
+      .btn.btn-toolbar.item-compose {
+        img {
+          content: url("mailspring://breeze-light/icons/mail-message-new.svg");
+        }
+        border: 1px solid !important;
+        border-color: @panel-background!important;      
+        &:hover {
+          border: 1px solid;
+          border-color: @breeze-blue !important;
+        }
+      }      
+    }
     .toolbar-MessageList,
     .toolbar-MessageListSidebar,
     .toolbar-DraftList,
@@ -74,7 +116,14 @@ body.platform-win32 {
       .mode-toggle {
         img {
           content: url("mailspring://breeze-light/icons/im-user-busy.svg");
-        } }      
+        }
+        border: 1px solid !important;
+        border-color: @panel-background!important;      
+        &:hover {
+          border: 1px solid;
+          border-color: @breeze-blue !important;
+        }
+      }      
 
        .message-toolbar-items {
         .thread-sharing-button {
@@ -89,6 +138,17 @@ body.platform-win32 {
           img {
             content: url("mailspring://breeze-light/icons/chronometer.svg");
           } }
+
+        // add hover effect to all "standard" buttons
+        .btn{
+          border: 1px solid !important;
+          border-color: @panel-background!important;      
+          &:hover {
+            border: 1px solid;
+            border-color: @breeze-blue !important;
+          }
+  
+        }
         .btn[title="Move to Folder"].btn-category-picker {
           img {
             content: url("mailspring://breeze-light/icons/mail-move.svg");
@@ -128,7 +188,8 @@ body.platform-win32 {
         .btn[title="Archive"] {
           img {
             content: url("mailspring://breeze-light/icons/mail-archive.svg");
-          } }
+          }
+         }
 }}}
 //}
 
