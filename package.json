@@ -3,9 +3,9 @@
   "title": "Breeze Light",
   "displayName": "Breeze Light",
   "theme": "ui",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Mimic Plasma/KDE breeze light theme.",
-  "license": "MIT",
+  "license": "theme: MIT, Tela icons: GPLv3, Breeze icons: LGPL",
   "engines": {
     "mailspring": "*"
   }
