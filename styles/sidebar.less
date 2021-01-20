@@ -5,6 +5,8 @@
   color: @accent-dark;
 }
 
+ 
+
 .account-sidebar-sections {
   //background-color: @white !important;
   background-color: @panel-background !important;
@@ -69,6 +71,65 @@
           }
         }
       }
+
+      // Changing the icons for the folders, some of them have simple human readable ids,
+      // while others do not. It is likely that the latter will break in many cases
+
+      // Also, I found no way to discriminate the "Labels" section from the rest
+      // I set the default icon to "label" and redefine the others
+      .item{
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-label.svg") !important;
+          } } }
+      // Personalized icons
+      .item[id="Jm47j8CLKMvTHR8RXMxm2PmDsK86ai3BYnMyb4ow6"] {
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-inbox.svg") !important;
+          } } }
+      .item[id="Unread"] {
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-unread.svg") !important;
+          } } }
+      .item[id="Starred"] {
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-starred.svg") !important;
+          } } }
+      .item[id="Reminders"] {
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-bell.svg") !important;
+          } } }
+      .item[id="MMjpyjAPyfUqQ6xi1RzxK1jx8hveYjn8EDDWwFRjX"] { // Important
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-flag-blue.svg") !important;
+          } } }
+      .item[id="gJtMJTLr3A7CeSuZhsXDcWD66qQGFWPgSGVdHWz2y"] { // Snoozed
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-chronometer.svg") !important;
+          } } }
+      .item[id="oktfrn411vAwHuyyYjyc4MRjLuwu4agJQh6mZNvw3"] { // Sent
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-sent.svg") !important;
+          } } }
+      .item[id="31vjrPubzsGtn2ossBv8kGYcqFwL8vUDLeUAbj8J7"] { // All Mail
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-archive.svg") !important;
+          } } }
+      .item[id="SoxmAmxNbUyQoKyQEhZSjNePhbfMBu2BXNhtJbMT7"] { // Spam
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-spam.svg") !important;
+          } } }
+      .item[id="PJ7BFJQ15ADPReVhvBgAhcVLtJnhUXiZfdPh3oWQW"] { // Trash
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-trash.svg") !important;
+          } } }
+      .item[id="Drafts-undefined"] { // Drafts
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-draft.svg") !important;
+          } } }
+      .item[id="Activity"] { // Activity
+        .icon { img {
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-earthquake.svg") !important;
+          } } }
     }
   }
 }
