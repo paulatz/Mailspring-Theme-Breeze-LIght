@@ -5,13 +5,13 @@
 
 @import 'variables';
 
-@accent-light: #f2f2f2;
-@accent-dark: #000000;
+//@accent-light: #f2f2f2;
+//@accent-dark: #000000;
 
 @accent-primary: @accent-light;
 @accent-primary-dark: darken(@accent-light, 20%);
 
-@background-secondary: #f2f2f2;
+@background-secondary: @inactive-tab; //#f2f2f2;
 @text-color: @accent-dark;
 @text-color-subtle: lighten(@accent-dark, 20%);
 @text-color-very-subtle: @accent-light;
@@ -19,9 +19,9 @@
 @text-color-inverse-subtle: darken(@accent-light, 30%);
 @text-color-inverse-very-subtle: darken(@accent-light, 20%);
 
-@panel-background-color: @white;
-@toolbar-background-color: @white;
+@panel-background-color: @panel-background; //@white;
+@toolbar-background-color: @panel-background; //@white;
 
-@btn-default-bg-color: @white;
+@btn-default-bg-color: @panel-background; //@white;
 @btn-default-text-color: @accent-light;
 @background-gradient: none;
