@@ -42,6 +42,97 @@ body.platform-win32 {
   }
 }
 
+//div:not(.layout-mode-popout) {
+  .sheet-toolbar {
+    .toolbar-MessageList,
+    .toolbar-MessageListSidebar,
+    .toolbar-DraftList,
+    .toolbar-ActivityContent,
+    .toolbar-Preferences{
+      // Over-ride previously set image properties.
+      img {
+        zoom: 1 !important;
+        -webkit-mask-image: none !important;
+        -webkit-mask-repeat: none !important;
+        mask-image: none !important;
+        mask-repeat: none !important;
+        object-position: 0 !important;
+        background: none !important;
+
+        // New properties to be set for the images.
+        height: 24px;
+        background-size: auto !important;
+      }
+
+      // Upper right corner cog.
+      .toolbar-menu-control {
+        img {
+          content: url("mailspring://breeze-light/icons/settings.svg");
+        } }
+
+      // Upper right corner users.
+      .mode-toggle {
+        img {
+          content: url("mailspring://breeze-light/icons/im-user-busy.svg");
+        } }      
+
+       .message-toolbar-items {
+        .thread-sharing-button {
+          img {
+            content: url("mailspring://breeze-light/icons/document-share.svg");
+          } }
+        .send-reminders-toolbar-button {
+          img {
+            content: url("mailspring://breeze-light/icons/bell.svg");
+          } }
+        .snooze-button {
+          img {
+            content: url("mailspring://breeze-light/icons/chronometer.svg");
+          } }
+        .btn[title="Move to Folder"].btn-category-picker {
+          img {
+            content: url("mailspring://breeze-light/icons/mail-move.svg");
+          } }
+        .btn[title="Apply Label"].btn-category-picker {
+          img {
+            content: url("mailspring://breeze-light/icons/tag.svg");
+          } }
+        .btn[title="Mark as Read"] {
+          img {
+            content: url("mailspring://breeze-light/icons/mail-mark-read.svg");
+          } }
+        .btn[title="Mark as Unread"] {
+          img {
+            content: url("mailspring://breeze-light/icons/mail-mark-unread.svg");
+          } }
+        .btn[title="Star"] {
+          img {
+            content: url("mailspring://breeze-light/icons/star-on.svg");
+          } }
+        .btn[title="Unstar"] {
+          img {
+            content: url("mailspring://breeze-light/icons/star-off.svg");
+          } }
+        .btn[title="Move to Trash"] {
+          img {
+            content: url("mailspring://breeze-light/icons/user-trash.svg");
+          } }
+        .btn[title="Mark as Spam"] {
+          img {
+            content: url("mailspring://breeze-light/icons/mail-mark-junk.svg");
+          } }
+        .btn[title="Not Spam"] {
+          img {
+            content: url("mailspring://breeze-light/icons/mail-mark-notjunk.svg");
+          } }
+        .btn[title="Archive"] {
+          img {
+            content: url("mailspring://breeze-light/icons/mail-archive.svg");
+          } }
+}}}
+//}
+
+
 .btn.btn-emphasis {
   background-color: @accent-accent !important;
   border-color: @accent-accent !important;
