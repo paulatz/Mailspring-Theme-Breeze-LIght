@@ -5,6 +5,36 @@
   padding-left: 30px;
 }
 
+// color of search box text preview
+.thread-search-bar.placeholder .tokenizing-contenteditable .layer-tokens {
+    color: #8c8e8f;
+}
+// color of the search box when typing (doesn ot seem to work)
+thread-search-bar.tokenizing-contenteditable .layer-tokens {
+  color: @black;
+}
+
+/* Trying to fix the scrollbar handle
+.thread-list .list-container, .draft-list .list-container, .thread-list .scroll-region, .draft-list
+.scroll-region .scrollbar-track {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.5s;
+  padding: 0px;
+  width: 8px;
+  background: #fafafa;
+  border-left: 0;
+  .scrollbar-track-inner {
+  .scrollbar-handle {
+    background-color: @accent-dark;
+    border: 0px;
+    border-radius: 3px;
+    width: 90%;
+  } }
+  */
+
+  
 .thread-list {
   .list-container {
     .list-item {

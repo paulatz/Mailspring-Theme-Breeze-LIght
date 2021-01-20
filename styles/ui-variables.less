@@ -12,12 +12,17 @@
 @accent-primary-dark: darken(@accent-light, 20%);
 
 @background-secondary: @inactive-tab; //#f2f2f2;
-@text-color: @accent-dark;
-@text-color-subtle: lighten(@accent-dark, 20%);
-@text-color-very-subtle: @accent-light;
-@text-color-inverse: @accent-light;
-@text-color-inverse-subtle: darken(@accent-light, 30%);
-@text-color-inverse-very-subtle: darken(@accent-light, 20%);
+@text-color: #000000; // affects mail subject in the mail panel
+@text-color-subtle: darken(@breeze-blue,20%); //color of icons in the folder list
+@text-color-very-subtle: lighten(@text-color, 10%); // sende, recipient etc. in mail panel
+@text-color-inverse: @accent-light; // test of "Send" button
+@text-color-inverse-subtle: darken(@accent-light, 30%); // nothing?
+@text-color-inverse-very-subtle: darken(@accent-light, 20%); // nothing?
+
+@text-color-link: @accent-lighter
+@text-color-link-hover: darken(@accent-lighter, 20%);
+@text-color-link-active: #d11ce2;
+
 
 @panel-background-color: @panel-background; //@white;
 @toolbar-background-color: @panel-background; //@white;
