@@ -13,14 +13,14 @@
 .new-package > .btn,
 .appearance-mode-switch > .btn {
   box-shadow: none !important;
-  background: @white !important;
+  background: @panel-background !important;
   //background: @accent-light !important;
   border: 0;
   border-color: @white !important;
   border-radius: @base-border-radius !important;
-  &.item-compose {
-    border: 1px solid @accent-light;
-  }
+//  &.item-compose {
+//    border: 1px solid @accent-breeze;
+//  }
 }
 
 .composer-action-bar-content {
@@ -28,6 +28,10 @@
     border: 0 !important;
     background: transparent !important;
   }
+}
+
+body.platform-linux .sheet-toolbar-container {
+    background: @panel-background !important;
 }
 
 body.platform-win32 {
