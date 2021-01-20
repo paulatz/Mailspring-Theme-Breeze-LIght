@@ -5,7 +5,6 @@ Still very much work in progress, but it works. If you are good with this kind o
 TODO:
 1. mail composition icons (toolbar icons: done)
 2. fix some-on-dark panels, es. pop-up windows of delayed notification
-3. ugly scrollbars
 
 <img src="https://raw.githubusercontent.com/paulatz/Mailspring-Theme-Starter/master/preview.jpg"/>
 
