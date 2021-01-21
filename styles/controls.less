@@ -36,6 +36,7 @@ body.platform-linux .sheet-toolbar-container {
 
 body.platform-win32 {
   .sheet-toolbar-container {
+    background: @panel-background !important;
     .btn-toolbar {
       border: 0 !important;
     }
@@ -44,6 +45,34 @@ body.platform-win32 {
 
 //div:not(.layout-mode-popout) {
   .sheet-toolbar {
+
+      // Button in the bar that appears when you select a Draft. 
+      // There is also another button "Clear Selection" but I do not know how to identify it
+      .btn.btn-toolbar{
+        border: 1px solid !important;
+        border-color: @panel-background!important;      
+        &:hover {
+          border: 1px solid;
+          border-color: @breeze-blue !important;
+        }        
+      }
+      .btn.btn-toolbar[title="Delete"] {
+        img {
+          content: url("mailspring://breeze-light/icons/user-trash.svg");
+        }
+        border: 1px solid !important;
+        border-color: @panel-background!important;      
+        &:hover {
+          border: 1px solid;
+          border-color: @breeze-blue !important;
+        }
+      }
+      // The bar that appears when you select a draft
+      .selection-bar .absolute .inner{
+        background: @panel-background !important;
+      }      
+
+
     .toolbar-RootSidebar {
       img {
         zoom: 1 !important;

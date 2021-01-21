@@ -79,13 +79,13 @@
       // I set the default icon to "label" and redefine the others
       .item{
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-label.svg") !important;
+            -webkit-mask-image: url("mailspring://breeze-light/icons/16-folder.svg") !important;
           } } }
-      // Personalized icons for the rest
-      .item[id="Jm47j8CLKMvTHR8RXMxm2PmDsK86ai3BYnMyb4ow6"] {
+      // Personalized icons
+      /*.item[id="Jm47j8CLKMvTHR8RXMxm2PmDsK86ai3BYnMyb4ow6"] {
         .icon { img {
             -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-inbox.svg") !important;
-          } } }
+          } } }*/
       .item[id="Unread"] {
         .icon { img {
             -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-unread.svg") !important;
@@ -98,30 +98,64 @@
         .icon { img {
             -webkit-mask-image: url("mailspring://breeze-light/icons/16-bell.svg") !important;
           } } }
-      .item[id="MMjpyjAPyfUqQ6xi1RzxK1jx8hveYjn8EDDWwFRjX"] { // Important
+      /*.item[id="MMjpyjAPyfUqQ6xi1RzxK1jx8hveYjn8EDDWwFRjX"] { // Important
         .icon { img {
             -webkit-mask-image: url("mailspring://breeze-light/icons/16-flag-blue.svg") !important;
           } } }
       .item[id="gJtMJTLr3A7CeSuZhsXDcWD66qQGFWPgSGVdHWz2y"] { // Snoozed
         .icon { img {
             -webkit-mask-image: url("mailspring://breeze-light/icons/16-chronometer.svg") !important;
-          } } }
-      .item[id="oktfrn411vAwHuyyYjyc4MRjLuwu4agJQh6mZNvw3"] { // Sent
+          } } }*/
+
+        .item{ // Sent
+          .icon { img[alt="inbox.png"] {
+              -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-inbox.svg") !important;
+            } }
+          .icon { img[alt="sent.png"] {
+              -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-sent.svg") !important;
+            } }
+          .icon { img[alt="all.png"] {
+              -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-archive.svg") !important;
+            } }
+          .icon { img[alt="trash.png"] {
+              -webkit-mask-image: url("mailspring://breeze-light/icons/16-trash.svg") !important;
+            } }
+          .icon { img[alt="all.png"] {
+              -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-sent.svg") !important;
+            } }
+          .icon { img[alt="spam.png"] {
+              -webkit-mask-image: url("mailspring://breeze-light/icons/16-spam.svg") !important;
+            } }
+          .icon { img[alt="snoozed.png"] {
+              -webkit-mask-image: url("mailspring://breeze-light/icons/16-chronometer.svg") !important;
+            } }
+          .icon { img[alt="important.png"] {
+              -webkit-mask-image: url("mailspring://breeze-light/icons/16-flag-blue.svg") !important;
+            } }
+          .icon { img[alt="label.png"] {
+              -webkit-mask-image: url("mailspring://breeze-light/icons/16-label.svg") !important;
+            } }
+            
+          }
+  
+
+      /*.item[id="2FLYnyfsMsjo4oXdWaAptMxKvonL3e49nCcwpy71X"] { // Sent
         .icon { img {
             -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-sent.svg") !important;
-          } } }
-      .item[id="31vjrPubzsGtn2ossBv8kGYcqFwL8vUDLeUAbj8J7"] { // All Mail
+          } } }*/
+      /*.item[id="31vjrPubzsGtn2ossBv8kGYcqFwL8vUDLeUAbj8J7"] { // All Mail
         .icon { img {
             -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-archive.svg") !important;
-          } } }
-      .item[id="SoxmAmxNbUyQoKyQEhZSjNePhbfMBu2BXNhtJbMT7"] { // Spam
+          } } }*/
+      /*.item[id="SoxmAmxNbUyQoKyQEhZSjNePhbfMBu2BXNhtJbMT7"] { // Spam
         .icon { img {
             -webkit-mask-image: url("mailspring://breeze-light/icons/16-spam.svg") !important;
-          } } }
-      .item[id="PJ7BFJQ15ADPReVhvBgAhcVLtJnhUXiZfdPh3oWQW"] { // Trash
+          } } }*/
+      //.item[id="PJ7BFJQ15ADPReVhvBgAhcVLtJnhUXiZfdPh3oWQW"] { // Trash
+      /*.item[id="quYbLMq3iJ6grw443gP84SbLuZ7gcEbEhSme6UJtS"] { // Trash
         .icon { img {
             -webkit-mask-image: url("mailspring://breeze-light/icons/16-trash.svg") !important;
-          } } }
+          } } }*/
       .item[id="Drafts-undefined"] { // Drafts
         .icon { img {
             -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-draft.svg") !important;
