@@ -101,7 +101,7 @@ img[src="images/composer/top-signature-dropdown@2x.png"] {
 }
 
 
-// Set a different colo for enabled/disable functions
+// Set a different color for enabled/disable functions
 // (only tested on link tracking, because I run out of the others while testing)
 .btn-toolbar{
   img.content-mask {
@@ -112,3 +112,14 @@ img[src="images/composer/top-signature-dropdown@2x.png"] {
 img.content-mask {
   background-color: @breeze-blue !important;
 } }
+
+// The icond in the "Send" button
+img[alt="icon-composer-send.png"] {
+  -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-sent.svg") !important;
+  zoom: 1.0 !important;
+  //margin:0  !important;
+  //padding:0  !important;
+  //border:0  !important;
+  height: 16px !important;
+  width: 16px !important;
+}
