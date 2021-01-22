@@ -14,25 +14,6 @@ thread-search-bar.tokenizing-contenteditable .layer-tokens {
   color: @black;
 }
 
-/* Trying to fix the scrollbar handle
-.thread-list .list-container, .draft-list .list-container, .thread-list .scroll-region, .draft-list
-.scroll-region .scrollbar-track {
-  position: relative;
-  opacity: 0;
-  transition: opacity 0.3s;
-  transition-delay: 0.5s;
-  padding: 0px;
-  width: 8px;
-  background: #fafafa;
-  border-left: 0;
-  .scrollbar-track-inner {
-  .scrollbar-handle {
-    background-color: @accent-dark;
-    border: 0px;
-    border-radius: 3px;
-    width: 90%;
-  } }
-  */
 
   
 .thread-list {
@@ -99,5 +80,43 @@ thread-search-bar.tokenizing-contenteditable .layer-tokens {
 .is-blurred {
   .thread-list .list-container .list-item.focused {
     border-bottom: 0;
+  }
+}
+
+
+.suggestions {
+  //left: 0;
+  //color: #ffff0f !important;
+  //top: 23px;
+  //width: 100%;
+  //position: absolute;
+  //background: @input-bg;
+  //border-bottom-left-radius: @border-radius-base;
+  //border-bottom-right-radius: @border-radius-base;
+  //box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.15), 0 -0.5px 0 rgba(0, 0, 0, 0.15),
+   // 0.5px 0 0 rgba(0, 0, 0, 0.15), -0.5px 0 0 rgba(0, 0, 0, 0.15), 0 4px 7px rgba(0, 0, 0, 0.15);
+
+  //padding-top: @padding-small-vertical;
+
+  .suggestion {
+    color: @black !important;
+    //padding: @padding-small-vertical @padding-small-horizontal;
+
+    &.selected {
+      background-color:@accent-dark !important;
+      color: @white !important;
+      .suggestion-token {
+        color:@accent-lighter !important;
+      }
+    }
+    &:hover {
+      background-color:darken(@breeze-blue,20%) !important;
+    }
+    &:hover:not(.selected) {
+      background-color:@breeze-blue !important;
+    }
+    .suggestion-token {
+      color:@black !important;
+    }
   }
 }
