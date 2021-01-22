@@ -7,7 +7,7 @@
 
 // color of search box text preview
 .thread-search-bar.placeholder .tokenizing-contenteditable .layer-tokens {
-    color: #8c8e8f;
+    color: @inactive-text;
 }
 // color of the search box when typing (doesn ot seem to work)
 thread-search-bar.tokenizing-contenteditable .layer-tokens {
@@ -83,7 +83,7 @@ thread-search-bar.tokenizing-contenteditable .layer-tokens {
   }
 }
 
-
+// Drop down panel of search bar
 .suggestions {
   //left: 0;
   //color: #ffff0f !important;
@@ -110,7 +110,7 @@ thread-search-bar.tokenizing-contenteditable .layer-tokens {
       }
     }
     &:hover {
-      background-color:darken(@breeze-blue,20%) !important;
+      background-color:@breeze-blue-darker !important;
     }
     &:hover:not(.selected) {
       background-color:@breeze-blue !important;
