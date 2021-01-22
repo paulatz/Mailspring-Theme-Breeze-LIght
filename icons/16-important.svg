@@ -12,5 +12,5 @@
  <defs>
   <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:#565656; } .ColorScheme-Highlight { color:#5294e2; }</style>
  </defs>
- <path class="ColorScheme-Text" d="m0.5 11.495s0 1 1 1c0 0 7.7543 0.01146 11 5e-3 0.53159-0.0011 3-5.005 3-5.005s-2.4684-4.9939-3-4.995c-3.2457-0.00701-11-5e-3 -11-5e-3s-1 0-1 1z" fill="currentColor" stop-color="#000000" style="font-variation-settings:normal"/>
+ <path class="ColorScheme-Text" d="m1 12s0 1 1 1c0 0 7.7543 0.01146 11 5e-3 0.53159-0.0011 3-5.005 3-5.005s-2.4684-4.9939-3-4.995c-3.2457-0.00701-11-5e-3 -11-5e-3s-1 0-1 1z" fill="currentColor" stop-color="#000000" style="font-variation-settings:normal"/>
 </svg>
