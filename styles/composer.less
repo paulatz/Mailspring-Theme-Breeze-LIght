@@ -107,11 +107,23 @@ img[src="images/composer/top-signature-dropdown@2x.png"] {
   img.content-mask {
     background-color:@accent-dark !important;
   }
+  &:hover{
+    img.content-mask {
+      background-color:@black !important;
+    }
+  }
 }
+
 .btn-enabled{
-img.content-mask {
-  background-color: @breeze-blue !important;
-} }
+  img.content-mask {
+    background-color: @breeze-blue !important;
+  }
+  &:hover{
+    img.content-mask {
+      background-color:darken(@breeze-blue,20%) !important;
+    }  
+  }
+}
 
 // The icond in the "Send" button
 img[alt="icon-composer-send.png"] {
