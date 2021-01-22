@@ -9,6 +9,8 @@
 // alway there, or it depends on the screen resolution?)
 // This works ok, but there are some alignment issue, between the icons and w.r.t the small handle
 // associated with some of them. I try to hammer them in place
+
+
 img[src="mailspring://open-tracking/assets/icon-composer-eye@2x.png"] {
     -webkit-mask-image: url("mailspring://breeze-light/icons/24-eye.svg") !important;
     zoom: 1.2 !important;
@@ -103,15 +105,15 @@ img[src="images/composer/top-signature-dropdown@2x.png"] {
 
 // Set a different color for enabled/disable functions
 // (only tested on link tracking, because I run out of the others while testing)
-.btn-toolbar{
+.composer-inner-wrap .composer-action-bar-wrap .btn.btn-toolbar{
   img.content-mask {
     background-color:@accent-dark !important;
   }
-  //&:hover{
-  //  img.content-mask {
-  //    background-color:@black !important;
-  //  }
-  //}
+  &:hover{
+    img.content-mask {
+      background-color:@black !important;
+    }
+  }
 }
 
 .btn-enabled{
