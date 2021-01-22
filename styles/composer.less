@@ -105,7 +105,7 @@ img[src="images/composer/top-signature-dropdown@2x.png"] {
 
 // Set a different color for enabled/disable functions
 // (only tested on link tracking, because I run out of the others while testing)
-.composer-inner-wrap .composer-action-bar-wrap .btn.btn-toolbar{
+.composer-inner-wrap .composer-action-bar-wrap .btn.btn-toolbar:not(.btn-enabled){
   img.content-mask {
     background-color:@accent-dark !important;
   }
@@ -116,7 +116,7 @@ img[src="images/composer/top-signature-dropdown@2x.png"] {
   }
 }
 
-.btn-enabled{
+.composer-inner-wrap .composer-action-bar-wrap .btn-enabled{
   img.content-mask {
     background-color: @breeze-blue !important;
   }
