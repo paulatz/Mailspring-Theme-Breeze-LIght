@@ -4,14 +4,44 @@
 .scrollbar-track {
   position: relative;
   //opacity: 0; this does not work because it also makes the child invisible
-  background-color: rgba(255, 0, 0, 0.0); // this works
-  padding: 0px !important;
+  // I do not make it 100% transparent to allow hovering
+  background-color: rgba(255, 255, 255, 0.01); // this works
+  padding: 1px !important;
   width: 8px !important;
   border-left: 0 !important;
-  .scrollbar-track-inner {
+  //transition-delay: 2.0s !important;
+  //transition: opacity 2.0s !important;
+  &:hover {
+    background-color: @scrollbar-background !important;
+    .scrollbar-track-inner {
+      .scrollbar-handle {
+        background-color: @accent-dark !important;
+        }
+      }
+    }
+.scrollbar-track-inner {
   .scrollbar-handle {
     background-color: @accent-dark !important;
-    border: 0px !important;
-    border-radius: 7px !important;
-    width: 8px !important;
-  } } }
+    border-width: 0 0 0 0 !important;
+    //padding: 3px!important;
+    border-radius: 6px !important;
+    width: 7px !important;
+    &:hover {
+      background-color: @breeze-blue-lighter !important;
+      }        
+    }
+  } 
+}
+
+//.scrolling.scrollbar-track{ // <- when moving, even if not grabbing and not hover
+//.scrolling.dragging{ // <- when grabbing, even not hover but only while moving
+// When grabbin handle with the mouse (even if not hover or not moving)
+  .dragging{
+    background-color: @scrollbar-background !important;
+    //transition: opacity 20.0s !important;
+    .scrollbar-track-inner{
+      .scrollbar-handle {
+        background-color: @breeze-blue-lighter !important;
+      }
+    }
+  }
