@@ -5,27 +5,38 @@
   position: relative;
   //opacity: 0; this does not work because it also makes the child invisible
   // I do not make it 100% transparent to allow hovering
-  background-color: rgba(255, 255, 255, 0.01); // this works
-  padding: 1px !important;
-  width: 8px !important;
+  background-color: rgba(255, 255, 255, 0.05); // this works
+  //padding: 1px !important;
+  width: 16px !important;
   border-left: 0 !important;
-  //transition-delay: 2.0s !important;
+  transition-delay: 0.1s !important;
   //transition: opacity 2.0s !important;
   &:hover {
-    background-color: @scrollbar-background !important;
     .scrollbar-track-inner {
-      .scrollbar-handle {
-        background-color: @accent-dark !important;
+      background-color: @scrollbar-background !important;
+      width: 8px !important;
+       margin-left: 4px !important;
+       margin-right: 4px !important;
+       border-radius: 6px !important;
+       .scrollbar-handle {
+          width: 8px !important;
+          //background-color: @accent-dark !important;
+          background-color: @breeze-blue !important;
         }
       }
     }
 .scrollbar-track-inner {
+  background-color: @scrollbar-background !important;
+  width: 8px !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+  border-radius: 6px !important;
   .scrollbar-handle {
     background-color: @accent-dark !important;
     border-width: 0 0 0 0 !important;
     //padding: 3px!important;
     border-radius: 6px !important;
-    width: 7px !important;
+    width: 8px !important;
     &:hover {
       background-color: @breeze-blue-lighter !important;
       }        
@@ -37,7 +48,7 @@
 //.scrolling.dragging{ // <- when grabbing, even not hover but only while moving
 // When grabbin handle with the mouse (even if not hover or not moving)
   .dragging{
-    background-color: @scrollbar-background !important;
+    //background-color: @scrollbar-background !important;
     //transition: opacity 20.0s !important;
     .scrollbar-track-inner{
       .scrollbar-handle {
