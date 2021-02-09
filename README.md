@@ -1,9 +1,8 @@
 Theme to fit with KDE/Plasma Breeze look.
+It uses Tela icons by default, but Breeze icons are also available. In order to switch from one to the other, just change the variable @iconurl in variables.less to point to icons-tela/ or to icons-breeze/.
 
-Still very much work in progress, but it works. If you are good with this kind of things, feel free to fork the project.
-
-TODO:
-1. still a few icons missing here and there
+INSTALLATION:
+Clone this repository, or download and decompress the zip, than use the "Edit/Install theme..." function of Mailspring. Be careful, if you want to clone directly into the packages folder of Mailspring, or put it in a directory that is not calle breeze-light that you will have to edit the @myurl variable accordingly for the resources to be found correctly.
 
 <img src="https://raw.githubusercontent.com/paulatz/Mailspring-Theme-Breeze-Light/master/preview.jpg"/>
 
@@ -13,8 +12,8 @@ It is relatively easy to adapt this theme to other KDE looks and feels, dependin
 - Colors (light themes): there are still some colors hardcoded here and there, but changing thos defined in variables.less should be enough.
 - Colors (dark themes): this requires some more work, as there are quite a few "darken" and "lighten" around that would not work properly. I'm trying to put all of them in variables.less and ui-variables.less, but more work is required.
 
-INSTALLATION:
-CLone this repository, or download and decompress the zip, than use the "Edit/Install theme..." function of Mailspring. Be careful, if you want to clone it directly into the packages folder of Mailspring, that it must be placed in a directory called "breeze-light" as this path is referenced in the style sheets.
+KNOWN BUGS:
+- It is possible that some icon will not themed depending at some screen resolution, i.e. if non "retina" icons are used. Ff this happens, please let contact me for a fix.
 
 
 
