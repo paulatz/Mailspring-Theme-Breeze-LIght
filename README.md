@@ -13,7 +13,7 @@ It is relatively easy to adapt this theme to other KDE looks and feels, dependin
 - Colors (dark themes): this requires some more work, as there are quite a few "darken" and "lighten" around that would not work properly. I'm trying to put all of them in variables.less and ui-variables.less, but more work is required.
 
 KNOWN BUGS:
-- It is possible that some icon will not themed depending at some screen resolution, i.e. if non "retina" icons are used. Ff this happens, please let contact me for a fix.
+- It is possible that some icon will not themed depending at some screen resolution, i.e. if non "retina" icons are used. If this happens, please let contact me for a fix.
 
 
 
