@@ -77,48 +77,48 @@
       // First: set the default icon to a folder
       .item{
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-folder.svg") !important;
+            -webkit-mask-image: url("@{iconurl}16-folder.svg") !important;
           } } }
       // Second: set by id those that can be set by id
       .item[id="Unread"] {
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-unread.svg") !important;
+            -webkit-mask-image: url("@{iconurl}16-mail-unread.svg") !important;
           } } }
       .item[id="Starred"] {
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-starred.svg") !important;
+            -webkit-mask-image: url("@{iconurl}16-starred.svg") !important;
           } } }
       .item[id="Reminders"] {
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-bell.svg") !important;
+            -webkit-mask-image: url("@{iconurl}16-bell.svg") !important;
           } } }
 
         // All the other folders do not have predictable names, I use the alt-text to find them
         .item{ 
           .icon { img[alt="inbox.png"] {
-              -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-inbox.svg") !important;
+              -webkit-mask-image: url("@{iconurl}16-mail-inbox.svg") !important;
             } }
           .icon { img[alt="sent.png"] {
-              -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-sent.svg") !important;
+              -webkit-mask-image: url("@{iconurl}16-mail-sent.svg") !important;
             } }
           .icon { img[alt="all.png"] {
-              -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-archive.svg") !important;
+              -webkit-mask-image: url("@{iconurl}16-mail-archive.svg") !important;
             } }
           .icon { img[alt="trash.png"] {
-              -webkit-mask-image: url("mailspring://breeze-light/icons/16-trash.svg") !important;
+              -webkit-mask-image: url("@{iconurl}16-trash.svg") !important;
             } }
           .icon { img[alt="spam.png"] {
-              -webkit-mask-image: url("mailspring://breeze-light/icons/16-spam.svg") !important;
+              -webkit-mask-image: url("@{iconurl}16-spam.svg") !important;
             } }
           .icon { img[alt="snoozed.png"] {
-              -webkit-mask-image: url("mailspring://breeze-light/icons/16-chronometer.svg") !important;
+              -webkit-mask-image: url("@{iconurl}16-chronometer.svg") !important;
             } }
           .icon { img[alt="important.png"] {
-              //-webkit-mask-image: url("mailspring://breeze-light/icons/16-flag.svg") !important;
-              -webkit-mask-image: url("mailspring://breeze-light/icons/16-important.svg") !important;
+              //-webkit-mask-image: url("@{iconurl}16-flag.svg") !important;
+              -webkit-mask-image: url("@{iconurl}16-important.svg") !important;
             } }
           .icon { img[alt="label.png"] {
-              -webkit-mask-image: url("mailspring://breeze-light/icons/16-label.svg") !important;
+              -webkit-mask-image: url("@{iconurl}16-label.svg") !important;
             } }
             
           }
@@ -126,28 +126,28 @@
 
       /*.item[id="2FLYnyfsMsjo4oXdWaAptMxKvonL3e49nCcwpy71X"] { // Sent
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-sent.svg") !important;
+            -webkit-mask-image: url("@{iconurl}16-mail-sent.svg") !important;
           } } }*/
       /*.item[id="31vjrPubzsGtn2ossBv8kGYcqFwL8vUDLeUAbj8J7"] { // All Mail
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-archive.svg") !important;
+            -webkit-mask-image: url("@{iconurl}16-mail-archive.svg") !important;
           } } }*/
       /*.item[id="SoxmAmxNbUyQoKyQEhZSjNePhbfMBu2BXNhtJbMT7"] { // Spam
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-spam.svg") !important;
+            -webkit-mask-image: url("@{iconurl}16-spam.svg") !important;
           } } }*/
       //.item[id="PJ7BFJQ15ADPReVhvBgAhcVLtJnhUXiZfdPh3oWQW"] { // Trash
       /*.item[id="quYbLMq3iJ6grw443gP84SbLuZ7gcEbEhSme6UJtS"] { // Trash
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-trash.svg") !important;
+            -webkit-mask-image: url("@{iconurl}16-trash.svg") !important;
           } } }*/
       .item[id="Drafts-undefined"] { // Drafts
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-mail-draft.svg") !important;
+            -webkit-mask-image: url("@{iconurl}16-mail-draft.svg") !important;
           } } }
       .item[id="Activity"] { // Activity
         .icon { img {
-            -webkit-mask-image: url("mailspring://breeze-light/icons/16-earthquake.svg") !important;
+            -webkit-mask-image: url("@{iconurl}16-earthquake.svg") !important;
           } } }
     }
   }
