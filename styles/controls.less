@@ -178,60 +178,48 @@ body.platform-win32 {
           }
   
         }
-        .btn[title="Move to Folder"].btn-category-picker,
-        .btn[title="移动到文件夹"].btn-category-picker {
-          img {
-            content: url("@{iconurl}24-mail-move.svg");
-          } }
-        .btn[title="Apply Label"].btn-category-picker,
-        .btn[title="应用标签"].btn-category-picker {
-          img {
-            content: url("@{iconurl}24-tag.svg");
-          } }
-        .btn[title="Mark as Read"],
-        .btn[title="标记为已读"] {
-          img {
-            content: url("@{iconurl}24-mail-mark-read.svg");
-          } }
-        .btn[title="Mark as Unread"],
-        .btn[title="标记为未读"] {
-          img {
-            content: url("@{iconurl}24-mail-mark-unread.svg");
-          } }
-        .btn[title="Star"],
-        .btn[title="星标"] {
-          img {
-            content: url("@{iconurl}24-star-on.svg");
-          } }
-        .btn[title="Unstar"],
-        .btn[title="取消星标"] {
-          img {
-            content: url("@{iconurl}24-star-off.svg");
-          } }
-        .btn[title="Move to Trash"],
-        .btn[title="移动到回收站"] {
-          img {
-            content: url("@{iconurl}24-user-trash.svg");
-          } }
-        .btn[title="Mark as Spam"],
-        .btn[title="标记为垃圾邮件"] {
-          img {
-            content: url("@{iconurl}24-mail-mark-junk.svg");
-          } }
-        .btn[title="Not Spam"],
-        .btn[title="不是垃圾邮件"] {
-          img {
-            content: url("@{iconurl}24-mail-mark-notjunk.svg");
-          } }
-        .btn[title="Archive"],
-        .btn[title="归档"] {
-          img {
-            content: url("@{iconurl}24-mail-archive.svg");
-          }
-         }
+        .btn.btn-category-picker img[src="images/toolbar/toolbar-movetofolder@1x.png"],
+                                 img[src="images/toolbar/toolbar-movetofolder@2x.png"] {
+                content: url("@{iconurl}24-mail-move.svg");
+            }
+        .btn.btn-category-picker img[src="images/toolbar/toolbar-tag@1x.png"],
+                                 img[src="images/toolbar/toolbar-tag@2x.png"] {
+                content: url("@{iconurl}24-tag.svg");
+            }
+        .btn img[src="images/toolbar/toolbar-markasunread@1x.png"],
+             img[src="images/toolbar/toolbar-markasunread@2x.png"] {
+                content: url("@{iconurl}24-mail-mark-unread.svg");
+            }
+        .btn img[src="images/toolbar/toolbar-markasread@1x.png"],
+             img[src="images/toolbar/toolbar-markasread@2x.png"] {
+                content: url("@{iconurl}24-mail-mark-read.svg");
+            }
+        .btn img[src="images/toolbar/toolbar-star@1x.png"],
+             img[src="images/toolbar/toolbar-star@2x.png"] {
+                content: url("@{iconurl}24-star-on.svg");
+            }
+        .btn img[src="images/toolbar/toolbar-star-selected@1x.png"],
+             img[src="images/toolbar/toolbar-star-selected@2x.png"] {
+                content: url("@{iconurl}24-star-off.svg");
+            }
+        .btn img[src="images/toolbar/toolbar-trash@1x.png"],
+             img[src="images/toolbar/toolbar-trash@2x.png"] {
+                content: url("@{iconurl}24-user-trash.svg");
+            }
+        .btn img[src="images/toolbar/toolbar-spam@1x.png"],
+             img[src="images/toolbar/toolbar-spam@2x.png"] {
+                content: url("@{iconurl}24-mail-mark-junk.svg");
+            }
+        .btn img[src="images/toolbar/toolbar-not-spam@1x.png"],
+             img[src="images/toolbar/toolbar-not-spam@2x.png"] {
+                content: url("@{iconurl}24-mail-mark-notjunk.svg");
+            }
+        .btn img[src="images/toolbar/toolbar-archive@1x.png"],
+             img[src="images/toolbar/toolbar-archive@2x.png"] {
+                content: url("@{iconurl}24-mail-archive.svg");
+            }
 }}}
 //}
-
 
 .btn.btn-emphasis {
   background-color: @accent-accent !important;
